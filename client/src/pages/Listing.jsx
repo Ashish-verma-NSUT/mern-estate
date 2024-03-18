@@ -21,7 +21,7 @@ export default function Listing() {
   const params = useParams();
   const [listing, setListing] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(true);
+  const [error, setError] = useState(false);
   const [copied, setCopied] = useState(false);
   const {currentUser} = useSelector((state)=> state.user);
   const [contact, setContact] = useState(false);
